@@ -1,12 +1,4 @@
-<layout.default>
-    <main class="line">
-        <flacker-word>
-            {{page.text}}
-        </flacker-word>
-    </main>
-    <aside>{{page.nr}}</aside>
-</layout.default>
-<script type="module">
+
     export default class FlackerWord extends HTMLElement {
         connectedCallback() {
             let text = this.textContent;
@@ -28,21 +20,3 @@
         }
     }
     customElements.define("flacker-word", FlackerWord);
-</script>
-<style global>
-    main.line {
-        font-size: 12rem;
-        font-weight: bold;
-        line-height: 0.7;
-    }
-
-    aside {
-        font-size: 2rem;
-        font-weight: bold;
-        color: coral;
-    }
-
-    flacker-word .f {
-        color: #666;
-    }
-</style>
