@@ -1,8 +1,6 @@
 <?php
 
 use slowfoot\configuration;
-use slowfoot\image\profile;
-use slowfoot_plugin\phuety\phuety_adapter;
 
 $lyrics = <<<EOL
 Take me baby
@@ -44,7 +42,6 @@ EOL;
 return new configuration(
     site_name: 'take me baby',
     site_description: "the famous lyrics by Jimi Tenor",
-    template_engine: phuety_adapter::class,
 
     sources: [
         'line' => function () use ($lyrics) {

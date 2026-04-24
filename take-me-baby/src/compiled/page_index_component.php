@@ -62,7 +62,7 @@ class page_index_component extends component {
   0 => 'layout.default',
 );
 
-    public function run_code(data_container $props, array $slots, data_container $helper, phuety_context $phuety, asset $assetholder): array{
+    public function run_code(data_container $props, array $slots, data_container $helper, phuety_context $phuety, asset $assetholder): ?array{
         // dbg("++ props for component", $this->name, $props);
 
 $lines = $helper->query('line()');
