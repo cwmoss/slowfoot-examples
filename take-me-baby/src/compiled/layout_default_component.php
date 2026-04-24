@@ -13,7 +13,7 @@ use function phuety\dbg;
 
 
 /**
- * /Users/rw/dev/slowfoot-examples/take-me-baby/src/layouts/default.phue.php ~ 
+ * /Users/rw/dev/slowfoot-examples/take-me-baby/src//layouts/default.phue.php ~ 
  */
 
 class layout_default_component extends component {
@@ -75,6 +75,6 @@ class layout_default_component extends component {
     }
 
     // public function debug_info(){
-    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src/layouts/default.phue.php ~ ;
+    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src//layouts/default.phue.php ~ ;
     // }
 }

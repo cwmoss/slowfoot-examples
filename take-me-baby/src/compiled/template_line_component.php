@@ -13,7 +13,7 @@ use function phuety\dbg;
 
 
 /**
- * /Users/rw/dev/slowfoot-examples/take-me-baby/src/templates/line.phue.php ~ 
+ * /Users/rw/dev/slowfoot-examples/take-me-baby/src//templates/line.phue.php ~ 
  */
 
 class template_line_component extends component {
@@ -93,6 +93,6 @@ class template_line_component extends component {
     }
 
     // public function debug_info(){
-    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src/templates/line.phue.php ~ ;
+    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src//templates/line.phue.php ~ ;
     // }
 }
