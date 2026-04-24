@@ -13,7 +13,7 @@ use function phuety\dbg;
 
 
 /**
- * /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 27
+ * /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 23
  */
 
 class page_index_component extends component {
@@ -47,10 +47,6 @@ class page_index_component extends component {
 
     div:nth-child(9n) a {
         color: yellowgreen;
-    }
-
-    div.index:hover {
-        text-decoration: underline;
     }
 </style>',
   ),
@@ -87,6 +83,6 @@ $lines = $helper->query('line()');
     }
 
     // public function debug_info(){
-    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 27;
+    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 23;
     // }
 }

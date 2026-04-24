@@ -20,10 +20,6 @@
     div:nth-child(9n) a {
         color: yellowgreen;
     }
-
-    div.index:hover {
-        text-decoration: underline;
-    }
 </style>
 <?php
 

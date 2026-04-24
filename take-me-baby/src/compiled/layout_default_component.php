@@ -58,6 +58,11 @@ class layout_default_component extends component {
             text-decoration: none;
             font-weight: bold;
         }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.3rem;
+        }
     </style>
     <?php $__runner($__runner, "phuety.assets", $__d->_get("phuety")->with($this->tagname, "phuety.assets"), [] + array (
 ) ); ?>

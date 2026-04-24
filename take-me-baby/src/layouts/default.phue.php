@@ -17,6 +17,11 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        a:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 0.3rem;
+        }
     </style>
     <phuety.assets></phuety.assets>
 </head>
