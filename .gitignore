@@ -3,3 +3,5 @@ dist
 *.db
 compiled
 build
+vendor/
+composer.lock

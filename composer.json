@@ -1,0 +1,9 @@
+{
+  "minimum-stability": "dev",
+  "scripts": {
+    "make-demos": "@php vendor/bin/slowfoot build -f"
+  },
+  "require": {
+    "cwmoss/slowfoot": "dev-main"
+  }
+}
