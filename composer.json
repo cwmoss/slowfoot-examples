@@ -1,7 +1,7 @@
 {
   "minimum-stability": "dev",
   "scripts": {
-    "make-demos": "@php vendor/bin/slowfoot build -f"
+    "make-demos": "@php make_all_demos.php"
   },
   "require": {
     "cwmoss/slowfoot": "dev-main"
