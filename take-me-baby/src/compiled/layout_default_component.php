@@ -50,9 +50,18 @@ class layout_default_component extends component {
   'rel' => 'stylesheet',
 ) ) ?>
     <style>
+        html {
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 2rem;
+            margin: 0;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr auto;
         }
 
         a {
@@ -65,6 +74,11 @@ class layout_default_component extends component {
             text-decoration: underline;
             text-decoration-thickness: 0.3rem;
         }
+
+        footer {
+            font-size: 1rem;
+            padding: 1rem;
+        }
     </style>
     <?php $__runner($__runner, "phuety.assets", $__d->_get("phuety")->with($this->tagname, "phuety.assets"), [] + array (
 ) ); ?>
@@ -72,6 +86,7 @@ class layout_default_component extends component {
 
 </head><body>
     <?=$slots["default"]??""?>
+    <footer>demo source: <a href="https://github.com/cwmoss/slowfoot-examples/tree/main/take-me-baby">https://github.com/cwmoss/slowfoot-examples/tree/main/take-me-baby</a></footer>
     <?php $__runner($__runner, "phuety.assets", $__d->_get("phuety")->with($this->tagname, "phuety.assets"), [] + array (
   'body' => '',
 ) ); ?>

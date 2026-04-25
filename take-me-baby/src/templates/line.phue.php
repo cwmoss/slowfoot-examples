@@ -3,8 +3,9 @@
         <flacker-word>
             {{page.text}}
         </flacker-word>
+        <aside>{{page.nr}}</aside>
     </main>
-    <aside>{{page.nr}}</aside>
+
 </layout.default>
 <script type="module">
     export default class FlackerWord extends HTMLElement {

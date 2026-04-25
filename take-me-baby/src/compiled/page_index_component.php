@@ -13,7 +13,7 @@ use function phuety\dbg;
 
 
 /**
- * /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 23
+ * /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 24
  */
 
 class page_index_component extends component {
@@ -71,11 +71,12 @@ $lines = $helper->query('line()');
         // if($this->is_layout) print '<!DOCTYPE html>';
         $__s = [];
         ?><?php array_unshift($__s, []); ob_start(); ?>
-    <?php if(($_loop_c97211f8b7e8b3d5 = $__d->_get("lines")) && ((!$_loop_c97211f8b7e8b3d5 instanceof \Generator && !$_loop_c97211f8b7e8b3d5 instanceof \Iterator) || $_loop_c97211f8b7e8b3d5->valid())) { foreach($_loop_c97211f8b7e8b3d5 as  $line){$__d->_add_block(["line"=>$line ]); ?><div class="index">
-        <?= tag::tag_open_merged_attrs("a", ["href"=> $__d->_call("path")($__d->_get("line")->_id)], array (
+    <main>
+        <?php if(($_loop_c97211f8b7e8b3d5 = $__d->_get("lines")) && ((!$_loop_c97211f8b7e8b3d5 instanceof \Generator && !$_loop_c97211f8b7e8b3d5 instanceof \Iterator) || $_loop_c97211f8b7e8b3d5->valid())) { foreach($_loop_c97211f8b7e8b3d5 as  $line){$__d->_add_block(["line"=>$line ]); ?><div class="index">
+            <?= tag::tag_open_merged_attrs("a", ["href"=> $__d->_call("path")($__d->_get("line")->_id)], array (
 ) ) ?><?= tag::h($__d->_get("line")->text) ?></a>
-    </div><?php $__d->_remove_block();}}  ?>
-
+        </div><?php $__d->_remove_block();}}  ?>
+    </main>
 <?php $__runner($__runner, "layout.default", $__d->_get("phuety")->with($this->tagname, "layout.default"), [] + array (
 ) , ["default" => ob_get_clean()]+array_shift($__s)); ?>
 <?php // return ob_get_clean();
@@ -83,6 +84,6 @@ $lines = $helper->query('line()');
     }
 
     // public function debug_info(){
-    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 23;
+    //    return /Users/rw/dev/slowfoot-examples/take-me-baby/src//pages/index.phue.php ~ 24;
     // }
 }

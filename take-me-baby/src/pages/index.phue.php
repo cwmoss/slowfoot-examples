@@ -1,8 +1,9 @@
 <layout.default>
-    <div class="index" :foreach="lines as line">
-        <a :href="path(line._id)">{{line.text}}</a>
-    </div>
-
+    <main>
+        <div class="index" :foreach="lines as line">
+            <a :href="path(line._id)">{{line.text}}</a>
+        </div>
+    </main>
 </layout.default>
 <style global>
     div:nth-child(9n+4) a {

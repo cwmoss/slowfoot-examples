@@ -83,8 +83,9 @@ class template_line_component extends component {
         <flacker-word>
             <?= tag::h($__d->_get("page")->text) ?>
         </flacker-word>
+        <aside><?= tag::h($__d->_get("page")->nr) ?></aside>
     </main>
-    <aside><?= tag::h($__d->_get("page")->nr) ?></aside>
+
 <?php $__runner($__runner, "layout.default", $__d->_get("phuety")->with($this->tagname, "layout.default"), [] + array (
 ) , ["default" => ob_get_clean()]+array_shift($__s)); ?>
 
