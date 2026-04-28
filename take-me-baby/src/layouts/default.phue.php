@@ -7,6 +7,15 @@
     <title>{{globals.config.site_name}}</title>
     <link rel="stylesheet" href="@assets/test.css">
     <style>
+        :root {
+            --c1: #59009F;
+            --c2: #0069C9;
+            --c3: #01D93F;
+            --c4: #F0EC00;
+            --c5: #FF8B00;
+            --c6: #DB2B28;
+        }
+
         html {
             height: 100vh;
             box-sizing: border-box;
@@ -30,6 +39,10 @@
         a:hover {
             text-decoration: underline;
             text-decoration-thickness: 0.3rem;
+        }
+
+        main {
+            padding: 1rem;
         }
 
         footer {

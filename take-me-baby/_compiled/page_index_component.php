@@ -69,7 +69,7 @@ class page_index_component extends component {
     public function run_code(data_container $props, array $slots, data_container $helper, phuety_context $phuety, asset $assetholder): ?array{
         // dbg("++ props for component", $this->name, $props);
 
-$lines = $helper->query('line()');
+$lines = $helper->query('line()order(nr)');
 
         return get_defined_vars();
     }
