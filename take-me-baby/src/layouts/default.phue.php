@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{globals.config.site_name}}</title>
     <link rel="stylesheet" href="@assets/test.css">
+    <link rel="icon" href="@assets/favicon.svg" type="image/svg+xml">
     <style>
         :root {
             --c1: #59009F;

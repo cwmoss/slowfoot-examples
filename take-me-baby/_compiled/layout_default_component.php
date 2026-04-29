@@ -49,6 +49,10 @@ class layout_default_component extends component {
     <?= tag::tag_open_merged_attrs("link", ["href"=> $__d->_call("__path_alias")("assets", "test.css")], array (
   'rel' => 'stylesheet',
 ) ) ?>
+    <?= tag::tag_open_merged_attrs("link", ["href"=> $__d->_call("__path_alias")("assets", "favicon.svg")], array (
+  'rel' => 'icon',
+  'type' => 'image/svg+xml',
+) ) ?>
     <style>
         :root {
             --c1: #59009F;
