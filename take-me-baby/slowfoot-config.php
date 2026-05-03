@@ -4,9 +4,6 @@ use slowfoot\configuration;
 use slowfoot\hook;
 use slowfoot\hooks;
 
-use SVG\SVG;
-use SVG\Nodes\Shapes\SVGRect;
-
 $lyrics = <<<EOL
 Take me baby
 Take me now
@@ -44,7 +41,7 @@ Love me baby
 Love me on our way to a dark star
 EOL;
 
-hook::add(hooks::project_loaded, fn($project) => write_favicon($project->src . "/assets"));
+// hook::add(hooks::project_loaded, fn($project) => write_favicon($project->src . "/assets"));
 
 return new configuration(
     site_name: 'take me baby',
@@ -69,12 +66,3 @@ return new configuration(
         'line' => '/:nr/:text',
     ]
 );
-
-function write_favicon(string $directory, string $color = '#09ff00') {
-    $image = new SVG(128, 128);
-    $doc = $image->getDocument();
-    $square = new SVGRect(0, 0, 128, 128);
-    $square->setStyle('fill', $color);
-    $doc->addChild($square);
-    file_put_contents($directory . "/favicon.svg", $image->toXMLString(false));
-}

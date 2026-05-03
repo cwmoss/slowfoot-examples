@@ -30,7 +30,8 @@ class layout_default_component extends component {
 );
     public int $total_rootelements = 2;
     public ?array $components = array (
-  0 => 'phuety.assets',
+  0 => 'sft.favicon',
+  1 => 'phuety.assets',
 );
 
     public function run_code(data_container $props, array $slots, data_container $helper, phuety_context $phuety, asset $assetholder): ?array{
@@ -49,10 +50,12 @@ class layout_default_component extends component {
     <?= tag::tag_open_merged_attrs("link", ["href"=> $__d->_call("__path_alias")("assets", "test.css")], array (
   'rel' => 'stylesheet',
 ) ) ?>
-    <?= tag::tag_open_merged_attrs("link", ["href"=> $__d->_call("__path_alias")("assets", "favicon.svg")], array (
-  'rel' => 'icon',
-  'type' => 'image/svg+xml',
-) ) ?>
+    <?php $__runner($__runner, "sft.favicon", $__d->_get("phuety")->with($this->tagname, "sft.favicon"), [] + array (
+  'circle' => '',
+  'color' => 'black',
+  'size' => '80',
+) ); ?>
+
     <style>
         :root {
             --c1: #59009F;
