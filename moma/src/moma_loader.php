@@ -20,7 +20,8 @@ class moma_loader {
             $c++;
             if (($c % 100) != 1) continue;
             // print_r($row);
-            $row["_id"] = $row["ConstituentID"];
+            $row["_id"] =  $row["ObjectID"]; // $row["ConstituentID"];
+            $row["_type"] = "work";
             yield $row;
         }
     }

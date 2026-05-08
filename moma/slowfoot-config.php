@@ -15,6 +15,6 @@ return new configuration(
         'csvdata' => new moma_loader()
     ],
     templates: [
-        'artist' => '/:_id',
+        'work' => '/works/:_id',
     ]
 );
