@@ -31,6 +31,12 @@
     <footer>
         <div class="content">
             &copy; 2026
+            <br><br><br>
+            demo source: <a href="https://github.com/cwmoss/slowfoot-examples/tree/main/moma">https://github.com/cwmoss/slowfoot-examples/tree/main/moma</a>
+            <br>
+            this demo is based on the moma dataset of artworks:
+            <a href="https://github.com/museumofmodernart/collection">https://github.com/museumofmodernart/collection</a>
+            <br>digital object identifier: <a href="http://dx.doi.org/10.5281/zenodo.20035159">DOI</a>
         </div>
     </footer>
 

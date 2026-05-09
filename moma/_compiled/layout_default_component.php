@@ -13,7 +13,7 @@ use function phuety\dbg;
 
 
 /**
- * /Users/rw/dev/slowfoot-examples/moma/src//layouts/default.phue.php ~ 39
+ * /Users/rw/dev/slowfoot-examples/moma/src//layouts/default.phue.php ~ 45
  */
 
 class layout_default_component extends component {
@@ -83,6 +83,12 @@ class layout_default_component extends component {
     <footer>
         <div class="content">
             © 2026
+            <br><br><br>
+            demo source: <a href="https://github.com/cwmoss/slowfoot-examples/tree/main/moma">https://github.com/cwmoss/slowfoot-examples/tree/main/moma</a>
+            <br>
+            this demo is based on the moma dataset of artworks:
+            <a href="https://github.com/museumofmodernart/collection">https://github.com/museumofmodernart/collection</a>
+            <br>digital object identifier: <a href="http://dx.doi.org/10.5281/zenodo.20035159">DOI</a>
         </div>
     </footer>
 
@@ -93,6 +99,6 @@ class layout_default_component extends component {
     }
 
     // public function debug_info(){
-    //    return /Users/rw/dev/slowfoot-examples/moma/src//layouts/default.phue.php ~ 39;
+    //    return /Users/rw/dev/slowfoot-examples/moma/src//layouts/default.phue.php ~ 45;
     // }
 }

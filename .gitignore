@@ -6,4 +6,5 @@ build
 vendor/
 composer.lock
 moma/src/Artworks.csv
+moma/src/Artists.csv
 var/

@@ -10,11 +10,12 @@ use slowfoot\hooks;
 return new configuration(
     site_name: 'the moma collection',
     site_description: "beautiful art",
-
+    // store: "memory",
     sources: [
-        'csvdata' => new moma_loader()
+        'csvdata' => new moma_loader(max: 15)
     ],
     templates: [
+        'artist' => '/artists/:_id',
         'work' => '/works/:_id',
     ]
 );
