@@ -29,7 +29,9 @@ class layout_default_component extends component {
     public array $custom_tags = array (
 );
     public int $total_rootelements = 2;
-    public ?array $components = NULL;
+    public ?array $components = array (
+  0 => 'sft.favicon',
+);
 
     public function run_code(data_container $props, array $slots, data_container $helper, phuety_context $phuety, asset $assetholder): ?array{
         // dbg("++ props for component", $this->name, $props);
@@ -48,9 +50,11 @@ class layout_default_component extends component {
         ?><!DOCTYPE html><html><head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <?= tag::tag_open_merged_attrs("link", ["href"=> $__d->_call("__path_alias")("assets", "favicon.ico")], array (
-  'rel' => 'SHORTCUT ICON',
-) ) ?>
+    <?php $__runner($__runner, "sft.favicon", $__d->_get("phuety")->with($this->tagname, "sft.favicon"), [] + array (
+  'circle' => '',
+  'size' => '40',
+  'color' => '#11dc0f',
+) ); ?>
     <?= tag::tag_open_merged_attrs("link", ["href"=> $__d->_call("__path_alias")("assets", "css/app.css")], array (
   'rel' => 'stylesheet',
   'type' => 'text/css',

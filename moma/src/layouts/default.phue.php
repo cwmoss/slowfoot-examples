@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <link rel="SHORTCUT ICON" href="@assets/favicon.ico">
+    <sft.favicon circle size="40" color="#11dc0f"></sft.favicon>
     <link rel="stylesheet" href="@assets/css/app.css" type="text/css">
     <script src="@assets/js/jquery-3.6.0.min.js"></script>
     <script src="@assets/js/app.js"></script>
