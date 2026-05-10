@@ -28,6 +28,7 @@ class moma_loader {
         $artists_loader = new csv("src/Artists.csv");
         foreach ($artists_loader($config) as $row) {
             $aid = $row["ConstituentID"];
+            unset($row["ConstituentID"]);
             if (!isset(self::$artists[$aid]) && !$this->allow_import($row)) continue;
             if (!isset(self::$artists[$aid])) {
                 $row["_type"] = "artist";
