@@ -43,6 +43,16 @@ class moma_loader {
         foreach ($loader($config) as $row) {
             $artists = array_map(fn($it) => trim($it), explode(",", $row["ConstituentID"]));
             if (!isset(self::$artists[$artists[0]])) continue;
+            // Artist,ConstituentID,ArtistBio,Nationality,BeginDate,EndDate,Gender
+            unset(
+                $row["Artist"],
+                $row["ConstituentID"],
+                $row["ArtistBio"],
+                $row["Nationality"],
+                $row["BeginDate"],
+                $row["EndDate"],
+                $row["Gender"]
+            );
             $row["_id"] = $row["ObjectID"];
             $row["_type"] = "work";
             $row["artist"] = array_map(fn($it) => ["_ref" => $it], $artists);
